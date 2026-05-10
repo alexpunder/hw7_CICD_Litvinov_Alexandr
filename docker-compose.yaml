@@ -1,0 +1,21 @@
+services:
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - app_blue
+      - app_green
+
+  app_blue:
+    image: ml_model_v1:latest
+    environment:
+      - VERSION=v1-blue
+
+  app_green:
+    image: ml_model_v2:latest
+    environment:
+      - VERSION=v2-green
