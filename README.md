@@ -35,9 +35,15 @@ adr new "Explain deploy strategy"
 
 ### 5. Создать CI/CD-пайплайн для ML-сервиса с использованием GitHub Actions
 
-[Ссылка на успешный GitHub Actions](https://github.com/alexpunder/hw7_CICD_Litvinov_Alexandr/actions)
+[Ссылка GitHub Actions](https://github.com/alexpunder/hw7_CICD_Litvinov_Alexandr/actions)
 
-![Пример успешного pipeline](images/2_git_workflows_CI.png)
+![Secrets](images/3_github_secrets.png)
+
+![Пример успешного pipeline](images/4_github_actions.png)
+
+![Стадия отправки в DockerHub](images/5_job_docker_push.png)
+
+![Стадия получения образа и его запуск](images/6_job_pull_and_run.png)
 
 ### Итоговые выводы
 
